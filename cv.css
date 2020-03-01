@@ -1,0 +1,195 @@
+@media print {
+		@page {
+		size: auto;
+		margin: 0;
+	}
+}
+
+	body {
+	background-color: #f3f3f3;
+	}
+
+h1 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ 	font-size: 24px;
+ 	font-style: normal;
+	font-variant: normal;
+ 	font-weight: 700;
+	line-height: 26.4px;
+}
+
+	h2 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ 	font-size: 19px;
+ 	font-style: normal;
+		font-variant: normal;
+ 	font-weight: 700;
+ 	font-height: 22.4px;
+}
+
+h3 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  	font-size: 14px;
+	font-style: normal;
+ 	font-variant: normal;
+ 	font-weight: 700;
+	line-height: 15.4px;
+	}
+
+h4 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 12.4px;
+}
+
+p {
+		font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ 	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+ 	font-weight: 400;
+ 	line-height: 20px;
+	}
+
+blockquote {
+ 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ 	font-size: 21px;
+ 	font-style: normal;
+	font-variant: normal;
+ 	font-weight: 400;
+ 	line-height: 30px;
+}
+
+pre {
+ 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 13px;
+  	font-style: normal;
+ 	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+	}
+
+#cv {
+		display: flex;
+   	flex-direction: row;
+   	margin: 1%;
+   	height: 100%;
+    -webkit-print-color-adjust: exact;
+	}
+
+aside {
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+	padding-left: 1px;
+	padding-right: 1px;
+   	background-color: #333333;
+	color: #ffffff;
+    border-radius: 2%;
+}
+
+#main {
+	display: flex;
+	width: 70%;
+    flex-direction: column;
+    flex-grow: 4;
+	color: #000000;
+}
+
+aside > section {
+	margin-top: 10%;
+}
+
+aside > section > h2 {
+	margin: 10px;
+	color: #0070c2;
+}
+
+	#profile {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 3px;
+	width: 100%;
+}
+
+#contact > ul {
+	list-style: none;
+	font-size: 13px;
+	padding: 0;
+	padding-left: 20px;
+}
+
+#skills {
+	width: 100%;
+}
+
+.skill {
+	margin: 10px;
+}
+
+.skill > * {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+}
+
+.skill > h4 {
+	opacity: .8;
+}
+
+#profile > img {
+	width: 180px;
+	border-radius: 50%;
+}
+
+#profile > * {
+	margin: 0;
+	padding: 0;
+}
+
+#profile > hr {
+	width: 90%;
+	color: #ffffff;
+	align: center;
+	margin-top: 5px;
+}
+
+#profile > h2 {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+}
+
+#main > section {
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+#main > section > hr {
+	max-width: 100%;
+	margin: 0;
+}
+
+#main > section > article {
+	margin: 10px;
+}
+
+.item > h3 {
+	display: inline;
+	color: #0070c2;
+	margin: 0;
+}
+
+.item > h4 {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.item > span {
+	display: inline;
+}
