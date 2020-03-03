@@ -127,7 +127,7 @@ aside > * {
 
 #contact > ul {
     list-style: none;
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     padding-left: 4px;
@@ -159,7 +159,7 @@ i:before {
 
 #skills > div > div {
     width: 25%;
-    font-size: 11px;
+    font-size: 12px;
     padding: 5px;
     padding-top: 0;
     padding-bottom: 3px;
@@ -167,7 +167,7 @@ i:before {
 
 #links > ul {
     list-style: none;
-    font-size: 11px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     padding-left: 4px;
