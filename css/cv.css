@@ -162,7 +162,7 @@ i:before {
 	margin-top: 10px;
 }
 
-#skills > div > span {
+#skills > div > div {
 	width: 25%;
 	margin: 0;
 	padding: 1px;
