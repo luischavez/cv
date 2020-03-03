@@ -133,6 +133,10 @@ aside > * {
     padding-left: 4px;
 }
 
+#contact > ul > li {
+    padding: 2px;
+}
+
 #contact > ul > li > a {
     color: #ffffff;
 }
