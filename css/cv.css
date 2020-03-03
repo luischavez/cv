@@ -154,13 +154,15 @@ i:before {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
-    margin-top: 10px;
+    margin: 0 auto;
 }
 
 #skills > div > div {
     width: 25%;
     font-size: 11px;
     padding: 5px;
+    padding-top: 0;
+    padding-bottom: 3px;
 }
 
 #links > ul {
