@@ -9,6 +9,12 @@
     }
 }
 
+@media screen {
+    .no-print-screen, .no-print-screen * {
+        display: none !important;
+    }
+}
+
 body {
     background-color: #f3f3f3;
 }
