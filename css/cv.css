@@ -1,16 +1,23 @@
 @media print {
     @page {
         size: auto;
-        margin: 0;
+        margin: 0mm;
     }
 
-    .no-print, .no-print * {
+    a[href]:after {
+        content: none !important;
+    }
+
+    .no-print,
+    .no-print * {
         display: none !important;
     }
 }
 
 @media screen {
-    .no-print-screen, .no-print-screen * {
+
+    .no-print-screen,
+    .no-print-screen * {
         display: none !important;
     }
 }
@@ -22,6 +29,10 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+}
+
+* {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 h1 {
@@ -37,7 +48,7 @@ h2 {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 19px;
     font-style: normal;
-        font-variant: normal;
+    font-variant: normal;
     font-weight: 700;
     font-height: 22.4px;
 }
@@ -96,6 +107,7 @@ pre {
 }
 
 aside {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,11 +126,11 @@ aside {
     color: #000000;
 }
 
-aside > section > h2 {
+aside>section>h2 {
     color: #89a4c7;
 }
 
-aside > * {
+aside>* {
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 10px;
@@ -132,7 +144,7 @@ aside > * {
     align-items: center;
 }
 
-#contact > ul {
+#contact>ul {
     list-style: none;
     font-size: 12px;
     margin: 0;
@@ -140,47 +152,50 @@ aside > * {
     padding-left: 4px;
 }
 
-#contact > ul > li {
+#contact>ul>li {
     padding: 2px;
 }
 
-#contact > ul > li > a {
+#contact>ul>li>a {
     color: #ffffff;
 }
 
-#contact > ul > li > a:hover {
+#contact>ul>li>a:hover {
     color: #808080;
 }
 
 i:before {
-    font-size: 15px !important;
+    font-size: 14px !important;
     padding: 0 !important;
     margin: 0 !important;
-    margin-right: 5px !important;
+    margin-right: 2px !important;
 }
 
-#skills > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0 auto;
+.skillset {
+    margin-left: 2px;
+    font-size: smaller;
 }
 
-#skills > div > div {
-    width: 28%;
-    font-size: 12px;
-    padding: 5px;
-    padding-top: 0;
-    padding-bottom: 3px;
+.skillset>ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.skillset>ul>h3 {
+    font-weight: bold;
+}
+
+.skillset>ul>li {
+    display: inline-block;
+    margin-left: 5px;
 }
 
 #links {
     margin-top: 20px;
 }
 
-#links > ul {
+#links>ul {
     list-style: none;
     font-size: 12px;
     margin: 0;
@@ -188,93 +203,66 @@ i:before {
     padding-left: 4px;
 }
 
-#links > ul > li {
-    padding: 2px;
+#links>ul>li {
+    padding: 1px;
 }
 
-#links > ul > li > a {
+#links>ul>li>a {
     color: #ffffff;
 }
 
-#links > ul > li > a:hover {
+#links>ul>li>a:hover {
     color: #808080;
 }
 
-#profile > img {
+#profile>img {
     width: 180px;
     border-radius: 50%;
 }
 
-#profile > * {
+#profile>* {
     margin: 0;
     padding: 0;
 }
 
-#profile > hr {
+#profile>hr {
     width: 90%;
     color: #ffffff;
     margin-top: 5px;
 }
 
-#profile > h2 {
+#profile>h2 {
     margin-top: 15px;
     text-align: center;
     width: 100%;
     color: #ffffff;
 }
 
-#main > section {
+#main>section {
     margin-left: 10px;
-    margin-top: 2px;
 }
 
-#main > section > hr {
+#main>section>hr {
     max-width: 100%;
     margin: 0;
 }
 
-#main > section > article {
-    margin: 10px;
+#main>section>article {
+    margin: 4px;
 }
 
-.item > h3 {
+.item>h3 {
     display: inline;
     color: #0070c2;
     margin: 0;
 }
 
-.item > h4 {
+.item>h4 {
     margin: 0;
     margin-top: 5px;
 }
 
-.item > span {
+.item>span {
     display: inline;
     font-size: 14px;
-}
-
-.meter {
-    height: 10px;  /* Can be anything */
-    width: 100%;
-    position: relative;
-    background: #555;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
-    border-radius: 1px;
-    padding: 2px;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-}
-
-.meter > span {
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    border-top-right-radius: 1px;
-    border-bottom-right-radius: 1px;
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
-    background-color: #89a4c7;
-    position: relative;
-    overflow: hidden;
 }
