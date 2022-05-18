@@ -144,6 +144,12 @@ aside>* {
     align-items: center;
 }
 
+#address>p {
+    margin: 0;
+    padding: 0;
+    margin-left: 4px;
+}
+
 #contact>ul {
     list-style: none;
     font-size: 12px;
@@ -251,18 +257,29 @@ i:before {
     margin: 4px;
 }
 
-.item>h3 {
+.item-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item>.item-location>div>h3 {
     display: inline;
     color: #0070c2;
     margin: 0;
 }
 
-.item>h4 {
-    margin: 0;
-    margin-top: 5px;
+.item>.item-location>div>span {
+    display: inline;
+    font-size: 14px;
 }
 
-.item>span {
+.item>h4 {
+    margin: 0;
+    margin-top: 1px;
+}
+
+.item>.item-location>span {
     display: inline;
     font-size: 14px;
 }
